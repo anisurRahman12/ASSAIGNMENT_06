@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link  href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/7cc3319204.js" crossorigin="anonymous"></script>
+</head>
+<body onload="loadToolsData();">
+    <header>
+        <section class="container">
+             <div class="text-center mt-4"><h1>AI Universe Hub</h1></div>
+             <button class="btn btn-danger d-block mx-auto">Sort By Date</button>
+        </section>
+      </header>
+      <main>
+          <section class="container mt-5">
+                  <div id="card-container"  class="row gy-4">
+  
+                  </div>
+          </section>
+         
+          <section class="container mt-5 mb-5">
+              <button id="btn-see-more" class="btn btn-danger d-block mx-auto">See More</button>
+          </section>
+  
+          <section class="container">
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-xl">
+            
+                  <div style="height: 590px;" class="modal-content rounded-2">
+                    <div class="modal-header border border-0">
+                      <button type="button" onclick="modalDataClean()" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+            
+                    <div class="modal-body p-4">
+                        <div class="row container gy-4">
+                            <div class="col-sm-12 col-md-6 ">
+                                <div class="card bg-light" style="height: 450px;">
+                                    <div class="card-body mb-5">
+                                      <h5 id="card-left-title" class="card-title p-3"></h5>
+                                       <div id="pricin-container" class="d-flex justify-content-evenly container">                           
+                       
+                                       </div>
+            
+                                       <div  class="d-flex justify-content-between pe-3" >
+                                          <div>
+                                            <h5>Features</h5>
+                                            <ul id="features-list">
+                                        
+                                            </ul>
+                                          </div>
+            
+                                          <div>
+                                             <h5>Integrations</h5>
+                                             <ul id="integrations-list">
+                                                
+                                             </ul>
+                                          </div>
+            
+                                       </div>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6">
+                                <div  class="card" style="height: 450px;">
+                                  <div id="inner-accuracy" class="position-relative">
+            
+                                  </div>
+                                  <div id="modal-img">
+            
+                                  </div>
+            
+                                    <div class="card-body">
+                                      <div id="card-input-output">
+            
+                                      </div>
+            
+                                    </div>
+                                  </div>
+                            </div>
+                          </div>
+                    </div>
+                   
+                  </div>
+            
+                </div>
+              </div>
+                    </section>
+            
+            
+        </main>    
+        <!-- Boostrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+   
+    <script src="index.js"></script>
+</body>
+</html>
